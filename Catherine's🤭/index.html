@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Will You? 💌</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- floating hearts live here, filled in by script.js -->
+<div class="floating-hearts" id="floatingHearts"></div>
+
+<!-- ============ SCREEN 1 — THE PROPOSAL ============ -->
+<main class="screen screen--active" id="screen-proposal">
+  <section class="card">
+    <div class="card__heart">♥</div>
+
+    <h1 class="card__title">Hey Catherine Wanjiku Kuria</h1>
+
+    <p class="card__quote">
+      Since this is a website, I think my love was at first site <span class="emoji">💕</span>
+    </p>
+
+    <p class="card__intro">
+      Also, quick disclaimer Since I'm the computer scientist in this relationship,
+      I can't exactly keep doing all the "tech stuff" (coding) in class
+      and pretend I'm not thinking about you the whole time. So I built you this instead.🥹
+    </p>
+
+    <p class="card__question">Will you be my girlfriend?</p>
+
+    <div class="card__actions">
+      <button class="btn btn--yes" id="yesBtn">Yes <span class="emoji">😊</span></button>
+      <button class="btn btn--no" id="noBtn">No <span class="emoji">😮‍💨</span></button>
+    </div>
+
+    <p class="card__hint" id="noHint">psst... the NO button is a little shy</p>
+  </section>
+</main>
+
+<!-- ============ SCREEN 2 — THE GALLERY ============ -->
+<main class="screen" id="screen-gallery">
+  <section class="card card--wide">
+    <div class="card__heart card__heart--small">♥</div>
+    <h2 class="card__title card__title--small">Us</h2>
+
+    <div class="slideshow" id="slideshow">
+      <div class="slideshow__track" id="slideTrack">
+        <!-- slides are injected by script.js from the IMAGES array -->
+      </div>
+      <button class="slide-nav slide-nav--prev" id="prevSlide" aria-label="Previous photo">&#10094;</button>
+      <button class="slide-nav slide-nav--next" id="nextSlide" aria-label="Next photo">&#10095;</button>
+      <div class="slide-dots" id="slideDots"></div>
+    </div>
+
+    <p class="love-note">
+      Hey Catherine, thank you for coming into my life. I love you so much, I love how you've
+      picked yes <span class="emoji">😂</span> you make ordinary days feel like something
+      worth looking forward to, and your affection towards me is honestly what make me love you the most.
+      Here's to many more memories like these. That's it I guess if your reading this then this means that were a thing🤸‍♂️.
+
+    </p>
+
+    <button class="btn btn--yes btn--full" id="toEndBtn">Continue >>>>> →</button>
+  </section>
+</main>
+
+<!-- ============ SCREEN 3 — THE END ============ -->
+<main class="screen" id="screen-end">
+  <section class="card card--end">
+    <div class="confetti" id="confetti"></div>
+    <h2 class="the-end">The End</h2>
+    <p class="last-words">Yuuuuuuuuuuuuuurrr Immmm Vivvv.. Ooops I meant we're dating🤭</p>
+    <div class="card__heart card__heart--small">♥</div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
